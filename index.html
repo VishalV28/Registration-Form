@@ -33,24 +33,26 @@
         <label for="theyThem"><input id="theyThem" type="radio" name="theyThem" class="inline" /> They/Them</label>
       </fieldset>
       <fieldset class="contactInfo">
+        <h4>Contact Information</h4>
         <label for="persContact">Personal <input id="persContact" type="tel" name="persContact" /></label>
         <label for="emergContact">Emergency <input id="emergContact" type="tel" name="emergContact" /></label>
-        <label for="referrer">How did you hear about us?
+      </fieldset>
+      <fieldset>
+        <label for="occupation"> Occupation <input id="occupation" name="occupation" type="text" required /></label>
+        <label for="referrer">How did you hear about Me?
           <select id="referrer" name="referrer">
             <option value="">(select one)</option>
-            <option value="1">News</option>
-            <option value="2">YouTube Channel</option>
-            <option value="3">Forum</option>
+            <option value="1">Personal reference</option>
+            <option value="2">The Plane Jar</option>
+            <option value="3">Online</option>
             <option value="4">Other</option>
           </select>
         </label>
         <label for="extraInfo">Anything else you may want me to know!
-          <textarea id="bio" name="bio" rows="3" cols="30" placeholder="I like coding on the beach..."></textarea>
+          <textarea id="bio" name="bio" rows="5" cols="30" placeholder="Feel free to express any concerns you may want addressed!"></textarea>
         </label>
+        <p class="subInfo"> I would love to know any information you are comfortable sharing about what you want to talk about in our sessions</p>
       </fieldset>
-      <label for="terms-and-conditions">
-        <input class="inline" id="terms-and-conditions" type="checkbox" required name="terms-and-conditions" /> I accept the <a href="https://www.freecodecamp.org/news/terms-of-service/">terms and conditions</a>
-      </label>
       <input type="submit" value="Submit" />
     </form>
   </body>
