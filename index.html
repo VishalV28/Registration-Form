@@ -7,53 +7,73 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <h1>Enquiry Form for Therapy Session</h1>
-    <p class="introText">Hello!</p>
-    <p class="introText">I am Divya Gidithuri (She/Her), a Counselling Psychologist based in Mumbai.</p>
-    <p class="introText">I have over 6 years of experience in providing psycho-socio-legal aid to survivors of abuse, trauma and individuals from the LGBTQIA+ community. My approach is primarily based on somatic experiencing while taking a more trauma focused, compassion focused and narrative perspective towards individuals.</p>
-    <div class="confidNote">
-      <button>Note on Confidentiality</button>
+    <div class="background">
+      <h1>Enquiry Form for Therapy Session</h1>
+      <div class="container">
+        <div class="header">
+          <div class="imgContainer">
+            <img class="img" src="public\profile-pic.jpg" alt="profile-pic"/>
+          </div>
+          <div class="infoContainer">
+            <p class="introText stressed">Hello!</p>
+            <p class="introText">I am Divya Gidithuri (She/Her), a Counselling Psychologist based in Mumbai.</p>
+            <p class="introText">I have over 6 years of experience in providing psycho-socio-legal aid to survivors of abuse, trauma and individuals from the LGBTQIA+ community. My approach is primarily based on somatic experiencing while taking a more trauma focused, compassion focused and narrative perspective towards individuals.</p>
+            <div class="buttonsBox">
+              <div class="confidNote">
+                <button id="button1">Note on Confidentiality</button>
+                <div id="hiddenElement1"></div>
+              </div>
+              <div class="timings">
+                <button id="button2">Timings</button>
+                <div id="hiddenElement2"></div>
+              </div>
+              <div class="paymentCont">
+                <button id="button3">Payment</button>
+                <div id="hiddenElement3"></div>
+              </div>
+              <div class="crisisSupport">
+                <button class="visElement">Crisis Support</button>
+                <div id="hiddenElement4"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <form method="post" action=''>
+          <fieldset class="initialCont">
+            <label for="name">Name <input id="name" name="name" type="text" required /></label>
+            <label for="email">Email <input id="email" name="email" type="email" required /></label>
+            <label for="number">Age <input id="age" name="age" type="number" min="10" max="120" required /></label>
+          </fieldset>
+          <fieldset class="pronounCont">
+            <legend>Your Pronouns</legend>
+            <label for="heHim"><input id="heHim" type="radio" name="heHim" class="inline" checked /> He/Him</label>
+            <label for="sheHer"><input id="sheHer" type="radio" name="sheHer" class="inline" /> She/Her</label>
+            <label for="theyThem"><input id="theyThem" type="radio" name="theyThem" class="inline" /> They/Them</label>
+          </fieldset>
+          <fieldset class="contactInfo">
+            <h4>Contact Information</h4>
+            <label for="persContact">Personal <input id="persContact" type="tel" name="persContact" /></label>
+            <label for="emergContact">Emergency <input id="emergContact" type="tel" name="emergContact" /></label>
+          </fieldset>
+          <fieldset class="extraInfo">
+            <label for="occupation"> Occupation <input id="occupation" name="occupation" type="text" required /></label>
+            <label for="referrer">How did you hear about Me?
+              <select id="referrer" name="referrer">
+                <option value="">(select one)</option>
+                <option value="1">Personal reference</option>
+                <option value="2">The Plane Jar</option>
+                <option value="3">Online</option>
+                <option value="4">Other</option>
+              </select>
+            </label>
+            <label for="additionalInfo">Additional Information
+              <textarea id="additonalInfo" name="additionalInfo" rows="5" cols="30" placeholder="Feel free to express any concerns you may want addressed!"></textarea>
+            </label>
+            <p class="subInfo"> I would love to know any information you may want me to and you are comfortable sharing regarding the topic of our sessions</p>
+          </fieldset>
+          <input type="submit" value="Submit" />
+        </form>
+      </div>
     </div>
-    <div class="timings">
-    </div>
-    <div class="paymentC">
-    </div>
-    <div class="crisisSupport">
-    </div>
-    <form method="post" action=''>
-      <fieldset class="initialCont">
-        <label for="name">Name <input id="name" name="name" type="text" required /></label>
-        <label for="email">Email <input id="email" name="email" type="email" required /></label>
-        <label for="number">Age <input id="age" name="age" type="number" min="10" max="120" required /></label>
-      </fieldset>
-      <fieldset class="pronounCont">
-        <legend>Your Pronouns</legend>
-        <label for="heHim"><input id="heHim" type="radio" name="heHim" class="inline" checked /> He/Him</label>
-        <label for="sheHer"><input id="sheHer" type="radio" name="sheHer" class="inline" /> She/Her</label>
-        <label for="theyThem"><input id="theyThem" type="radio" name="theyThem" class="inline" /> They/Them</label>
-      </fieldset>
-      <fieldset class="contactInfo">
-        <h4>Contact Information</h4>
-        <label for="persContact">Personal <input id="persContact" type="tel" name="persContact" /></label>
-        <label for="emergContact">Emergency <input id="emergContact" type="tel" name="emergContact" /></label>
-      </fieldset>
-      <fieldset>
-        <label for="occupation"> Occupation <input id="occupation" name="occupation" type="text" required /></label>
-        <label for="referrer">How did you hear about Me?
-          <select id="referrer" name="referrer">
-            <option value="">(select one)</option>
-            <option value="1">Personal reference</option>
-            <option value="2">The Plane Jar</option>
-            <option value="3">Online</option>
-            <option value="4">Other</option>
-          </select>
-        </label>
-        <label for="extraInfo">Anything else you may want me to know!
-          <textarea id="bio" name="bio" rows="5" cols="30" placeholder="Feel free to express any concerns you may want addressed!"></textarea>
-        </label>
-        <p class="subInfo"> I would love to know any information you are comfortable sharing about what you want to talk about in our sessions</p>
-      </fieldset>
-      <input type="submit" value="Submit" />
-    </form>
   </body>
 </html>
