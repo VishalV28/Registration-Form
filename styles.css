@@ -157,7 +157,7 @@ label a{
         display: flex;
         flex-wrap:nowrap;
         gap: 0px;
-        justify-content: space-between;
+        justify-content: space-around;
         padding-top: 10px;
     }
     .buttonsBox button{
@@ -179,5 +179,5 @@ label a{
 }
 
 @media(min-width: 780px){
-    
+
 }
